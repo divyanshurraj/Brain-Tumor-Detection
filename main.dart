@@ -11,12 +11,12 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: const FirebaseOptions(
-      apiKey: "AIzaSyCUDjD_ndtfqdKjow2L3VqeY1fHx0hpIfA",
-      authDomain: "brain-tumor-detection-b7101.firebaseapp.com",
-      projectId: "brain-tumor-detection-b7101",
-      storageBucket: "brain-tumor-detection-b7101.firebasestorage.app",
-      messagingSenderId: "629378189873",
-      appId: "1:629378189873:web:57a1aa5342b2d5ddb56310",
+      apiKey: "",
+      authDomain: "",
+      projectId: " ",
+      storageBucket: " ",
+      messagingSenderId: " ",
+      appId: " ",
     ),
   );
   runApp(const BrainTumorDetectorApp());
@@ -97,7 +97,7 @@ class _ImageUploadScreenState extends State<ImageUploadScreen> {
       // In _uploadAndAnalyzeImage():
       final response = await http.post(
         Uri.parse(
-            'http://192.168.209.95:5001/predict'), // Use this IP from your logs
+            'http://192..209.95:5001/predict'), // Use this IP from your logs
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({'image_url': imageUrl}),
       );

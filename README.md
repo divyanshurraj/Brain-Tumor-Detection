@@ -1,2 +1,5 @@
 # Brain-Tumor-Detection
-Front-end : Flutter, API : Flask, Server : Local Server
+Front-end : Flutter
+API : Flask
+Server : Local Server
+Use Kaggle Dataset 
